@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="aptm.css">
+    <script src="aptm.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Book Your Appointment</h1>
+        <p>Fill in the details below to schedule an appointment at a nearby hospital.</p>
+    </header>
+
+    <main>
+        <section id="appointment-booking">
+            <form id="appointment-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" placeholder="Your Contact Number" required>
+
+                <label for="hospital">Select Hospital:</label>
+                <select id="hospital" required>
+                    <option value="" disabled selected>Select a Hospital</option>
+                    <option value="hospital1">City Hospital</option>
+                    <option value="hospital2">General Hospital</option>
+                    <option value="hospital3">Community Health Center</option>
+                    <option value="hospital4">Downtown Medical Clinic</option>
+                </select>
+
+                <label for="doctor-category">Select Doctor Category:</label>
+                <select id="doctor-category" required onchange="updateDoctors()">
+                    <option value="" disabled selected>Select a Doctor Category</option>
+                    <option value="general-practitioner">General Practitioner</option>
+                    <option value="pediatrician">Pediatrician</option>
+                    <option value="dermatologist">Dermatologist</option>
+                    <option value="orthopedic">Orthopedic</option>
+                    <option value="cardiologist">Cardiologist</option>
+                    <option value="gynecologist">Gynecologist</option>
+                    <option value="neurologist">Neurologist</option>
+                    <option value="psychiatrist">Psychiatrist</option>
+                    <option value="dentist">Dentist</option>
+<option value="endocrinologist">Endocrinologist</option>
+<option value="gastroenterologist">Gastroenterologist</option>
+<option value="pulmonologist">Pulmonologist</option>
+<option value="urologist">Urologist</option>
+<option value="rheumatologist">Rheumatologist</option>
+<option value="oncologist">Oncologist</option>
+<option value="infectious-disease-specialist">Infectious Disease Specialist</option>
+<option value="nephrologist">Nephrologist</option>
+<option value="hematologist">Hematologist</option>
+<option value="allergist">Allergist</option>
+<option value="radiologist">Radiologist</option>
+<option value="plastic-surgeon">Plastic Surgeon</option>
+<option value="surgeon">Surgeon</option>
+<option value="physiotherapist">Physiotherapist</option>
+<option value="chiropractor">Chiropractor</option>
+<option value="optometrist">Optometrist</option>
+                </select>
+                <div id="doctor-list"></div>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" required>
+                    <option value="doctor-list" disabled selected>Select a Doctor</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+
+        <div id="confirmation-modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Appointment Confirmed!</h2>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MedSync. All rights reserved.</p>
+    </footer>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Cards</title>
+    <link rel="stylesheet" href="doctor.css">
+    <style>
+        /* Add styles for the animated search bar */
+        .search-bar {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 10px 40px 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-bar input:focus {
+            border-color: #0056b3;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            outline: none;
+        }
+
+        /* Add 3D effect to cards */
+        .card {
+            perspective: 1000px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: rotateY(10deg) rotateX(5deg);
+            box-shadow: 0 10px 20px rgba(248, 248, 248, 0.3);
+        }
+
+        /* Add styles for the button */
+        button {
+            background-color: #ed0101;
+            color: rgb(247, 248, 249);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #03e1fe;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for a doctor by specialty...">
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <h3>Medical Anatomy - Dr. John Smith</h3>
+                <img src="image1.jpg" alt="Medical Anatomy Image">
+                <p>Laudantium atque numquam dolorem facere.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Medical Geography - Dr. Jane Doe</h3>
+                <img src="image2.jpg" alt="Medical Geography Image">
+                <p>Est molestias ex eaque.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Sleep Therapy - Dr. Emily White</h3>
+                <img src="image3.jpg" alt="Sleep Therapy Image">
+                <p>Laborum eius with details.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Medical Geometry - Dr. Michael Brown</h3>
+                <img src="image4.jpg" alt="Medical Geometry Image">
+                <p>Reprehenderit quibusdam consequatur.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Dental Specialty - Dr. Sarah Johnson</h3>
+                <img src="image5.jpg" alt="Dental Specialty Image">
+                <p>Voluptatem dolorum atque.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Medical Spatology - Dr. David Wilson</h3>
+                <img src="image6.jpg" alt="Medical Spatology Image">
+                <p>Accusantium est aliquid.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Cardiovascular Disease - Dr. Lisa Taylor</h3>
+                <img src="cardio_image.jpg" alt="Cardiovascular Disease Image">
+                <p>Cardiovascular diseases refer to conditions affecting the heart and blood vessels.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Diabetes - Dr. Robert Anderson</h3>
+                <img src="diabetes_image.jpg" alt="Diabetes Image">
+                <p>A chronic disease that affects how your body turns food into energy.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Cancer - Dr. Patricia Martinez</h3>
+                <img src="cancer_image.jpg" alt="Cancer Image">
+                <p>Cancer is a group of diseases involving abnormal cell growth.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Asthma - Dr. James Garcia</h3>
+                <img src="asthma_image.jpg" alt="Asthma Image">
+                <p>A condition in which your airways narrow and swell, leading to breathing difficulty.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Alzheimer's Disease - Dr. Karen Lee</h3>
+                <img src="alzheimers_image.jpg" alt="Alzheimer's Disease Image">
+                <p>A progressive disease that destroys memory and other critical mental functions.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Parkinson's Disease - Dr. Charles Harris</h3>
+                <img src="parkinsons_image.jpg" alt="Parkinson's Disease Image">
+                <p>A neurodegenerative disorder that affects movement and causes tremors.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Stroke - Dr. Nancy Clark</h3>
+                <img src="stroke_image.jpg" alt="Stroke Image">
+                <p>A sudden interruption of the blood supply to part of the brain, causing brain damage.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Chronic Obstructive Pulmonary Disease (COPD) - Dr. Steven Lewis</h3>
+                <img src="copd_image.jpg" alt="COPD Image">
+                <p>A group of lung diseases that block airflow and make breathing difficult.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>HIV/AIDS - Dr. Angela Young</h3>
+                <img src="hiv_aids_image.jpg" alt="HIV/AIDS Image">
+                <p>A virus that attacks the immune system, leading to acquired immunodeficiency syndrome.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Multiple Sclerosis - Dr. Brian Hall</h3>
+                <img src="ms_image.jpg" alt="Multiple Sclerosis Image">
+                <p>A disease in which the immune system attacks the protective covering of nerve fibers.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Rheumatoid Arthritis - Dr. Jessica Allen</h3>
+                <img src="rheumatoid_arthritis_image.jpg" alt="Rheumatoid Arthritis Image">
+                <p>An autoimmune disorder that causes inflammation and pain in the joints.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Osteoporosis - Dr. Matthew King</h3>
+                <img src="osteoporosis_image.jpg" alt="Osteoporosis Image">
+                <p>A condition where bones become weak and brittle due to mineral loss.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Hepatitis - Dr. Laura Wright</h3>
+                <img src="hepatitis_image.jpg" alt="Hepatitis Image">
+                <p>An inflammation of the liver caused by viral infections or other factors.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Kidney Disease - Dr. Kevin Scott</h3>
+                <img src="kidney_disease_image.jpg" alt="Kidney Disease Image">
+                <p>A condition where the kidneys lose function over time, affecting waste removal.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Obesity - Dr. Sarah Green</h3>
+                <img src="obesity_image.jpg" alt="Obesity Image">
+                <p>A condition characterized by excessive body fat, increasing the risk of other diseases.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Tuberculosis - Dr. Daniel Adams</h3>
+                <img src="tuberculosis_image.jpg" alt="Tuberculosis Image">
+                <p>A bacterial infection that primarily affects the lungs but can affect other parts of the body.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Influenza - Dr. Michelle Baker</h3>
+                <img src="influenza_image.jpg" alt="Influenza Image">
+                <p>A contagious respiratory illness caused by influenza viruses.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Hypertension - Dr. Christopher Nelson</h3>
+                <img src="hypertension_image.jpg" alt="Hypertension Image">
+                <p>Also known as high blood pressure, it increases the risk of heart disease and stroke.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Gastritis - Dr. Elizabeth Carter</h3>
+                <img src="gastritis_image.jpg" alt="Gastritis Image">
+                <p>An inflammation of the stomach lining that can cause discomfort and digestive issues.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Epilepsy - Dr. Anthony Mitchell</h3>
+                <img src="epilepsy_image.jpg" alt="Epilepsy Image">
+                <p>A neurological disorder that causes recurrent seizures due to abnormal brain activity.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Psoriasis - Dr. Olivia Perez</h3>
+                <img src="psoriasis_image.jpg" alt="Psoriasis Image">
+                <p>A skin condition that causes red, scaly patches, often on the elbows, knees, and scalp.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Cholera - Dr. Samuel Roberts</h3>
+                <img src="cholera_image.jpg" alt="Cholera Image">
+                <p>An infectious disease caused by consuming contaminated food or water, leading to severe diarrhea and dehydration.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Malaria - Dr. Emily Turner</h3>
+                <img src="malaria_image.jpg" alt="Malaria Image">
+                <p>A life-threatening disease caused by parasites transmitted to humans through the bite of infected mosquitoes.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Acid Reflux - Dr. Jacob Phillips</h3>
+                <img src="acid_reflux_image.jpg" alt="Acid Reflux Image">
+                <p>A digestive condition where stomach acid or bile irritates the food pipe lining, causing heartburn and discomfort.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Lyme Disease - Dr. Sophia Campbell</h3>
+                <img src="lyme_disease_image.jpg" alt="Lyme Disease Image">
+                <p>A bacterial infection transmitted to humans through the bite of infected black-legged ticks.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Autism Spectrum Disorder - Dr. William Mitchell</h3>
+                <img src="autism_image.jpg" alt="Autism Spectrum Disorder Image">
+                <p>A developmental disorder affecting communication, behavior, and social interactions.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Shingles - Dr. Ava Edwards</h3>
+                <img src="shingles_image.jpg" alt="Shingles Image">
+                <p>A viral infection that causes a painful rash, typically occurring on one side of the body or face.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Chronic Fatigue Syndrome - Dr. Henry Collins</h3>
+                <img src="chronic_fatigue_image.jpg" alt="Chronic Fatigue Syndrome Image">
+                <p>A complex disorder characterized by extreme fatigue that doesn't improve with rest.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Celiac Disease - Dr. Mia Stewart</h3>
+                <img src="celiac_image.jpg" alt="Celiac Disease Image">
+                <p>An autoimmune disorder where the ingestion of gluten damages the small intestine lining.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Glaucoma - Dr. Lucas Sanchez</h3>
+                <img src="glaucoma_image.jpg" alt="Glaucoma Image">
+                <p>A group of eye conditions that damage the optic nerve, often associated with high eye pressure.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Schizophrenia - Dr. Grace Rivera</h3>
+                <img src="schizophrenia_image.jpg" alt="Schizophrenia Image">
+                <p>A serious mental disorder that affects thinking, feeling, and behavior, causing hallucinations and delusions.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Huntington's Disease - Dr. Elijah Cooper</h3>
+                <img src="huntingson_disease_image.jpg" alt="Huntington's Disease Image">
+                <p>An inherited neurodegenerative disorder that causes progressive motor dysfunction, cognitive decline, and psychiatric symptoms.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Endometriosis - Dr. Chloe Reed</h3>
+                <img src="endometriosis_image.jpg" alt="Endometriosis Image">
+                <p>A painful condition where tissue similar to the lining of the uterus grows outside the uterus.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Hyperthyroidism - Dr. Benjamin Cook</h3>
+                <img src="hyperthyroidism_image.jpg" alt="Hyperthyroidism Image">
+                <p>A condition where the thyroid gland produces too much thyroid hormone, leading to increased metabolism and other symptoms.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Cystic Fibrosis - Dr. Ella Morgan</h3>
+                <img src="cystic_fibrosis_image.jpg" alt="Cystic Fibrosis Image">
+                <p>An inherited disorder that causes severe damage to the lungs, digestive system, and other organs.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Sepsis - Dr. Aiden Bell</h3>
+                <img src="sepsis_image.jpg" alt="Sepsis Image">
+                <p>A life-threatening condition caused by the body's response to infection, leading to widespread inflammation and organ failure.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Brucellosis - Dr. Lily Ward</h3>
+                <img src="brucellosis_image.jpg" alt="Brucellosis Image">
+                <p>A bacterial infection transmitted from animals to humans, causing fever, joint pain, and fatigue.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Viral Hepatitis - Dr. Nathaniel Price</h3>
+                <img src="viral_hepatitis_image.jpg" alt="Viral Hepatitis Image">
+                <p>An inflammation of the liver caused by viral infections, leading to jaundice and fatigue.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Chronic Sinusitis - Dr. Zoe Bennett</h3>
+                <img src="sinusitis_image.jpg" alt="Chronic Sinusitis Image">
+                <p>Chronic inflammation of the sinuses causing symptoms like nasal congestion, facial pain, and a runny nose.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Bronchitis - Dr. Samuel Foster</h3>
+                <img src="bronchitis_image.jpg" alt="Bronchitis Image">
+                <p>An inflammation of the bronchial tubes, often caused by a viral infection, leading to coughing and difficulty breathing.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+          
+    <script src="doctor.js"></script>
+</body>
+</html>

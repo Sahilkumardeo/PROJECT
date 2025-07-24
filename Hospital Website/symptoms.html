@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptoms Prediction Tool</title>
+    <link rel="stylesheet" href="symp.css">
+    <script src="symp.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Symptoms Prediction Tool</h1>
+        <p>Enter your symptoms below to get a prediction of possible diseases.</p>
+    </header>
+
+    <main>
+        <section id="symptoms-prediction">
+            <form id="symptom-form">
+                <label for="symptoms">Enter Symptoms:</label>
+                <input type="text" id="symptoms" placeholder="e.g., fever, cough" required>
+                <button type="submit">Predict Disease</button>
+            </form>
+            <div id="result" class="hidden">
+                <div class="result-template">
+                    <h2>Predicted Disease:</h2>
+                    <p id="disease-name"></p>
+                    <h3>Description:</h3>
+                    <p id="disease-description"></p>
+                    <h3>Prescription:</h3>
+                    <p id="disease-prescription"></p>
+                    <h3>Medication:</h3>
+                    <p id="disease-medication"></p>
+                    <h3>Workouts:</h3>
+                    <p id="disease-workouts"></p>
+                    <h3>Diets:</h3>
+                    <p id="disease-diets"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MedSync. All rights reserved.</p>
+    </footer>
+</body>
+</html>
