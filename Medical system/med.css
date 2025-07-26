@@ -1,0 +1,88 @@
+/* Same base styling as before, plus new sections added */
+
+.testimonials {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+}
+
+.appointment {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.appointment form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.appointment form input,
+.appointment form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.appointment form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.appointment form button:hover {
+    background-color: #45a049;
+}
+
+.faq {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.faq h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin: 10px 0;
+}
+
+#map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Services</title>
+    <link rel="stylesheet" href="HEALTH.CSS">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>HealthCare</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to HealthCare</h2>
+            <p>Your health, our priority. We provide the best healthcare services.</p>
+            <button onclick="showAlert()">Get Started</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency services for all your urgent health needs.</p>
+            </div>
+            <div class="card">
+                <h3>Medical Consultation</h3>
+                <p>Get expert advice and consultations from top medical professionals.</p>
+            </div>
+            <div class="card">
+                <h3>Preventive Care</h3>
+                <p>Stay healthy with regular check-ups and preventive care options.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Patients Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"The care I received was amazing. The doctors and nurses were so attentive!"</p>
+                <h4>- Sarah J.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"I feel much better after the consultation. Highly recommend this healthcare service!"</p>
+                <h4>- Mark T.</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"They truly care about your well-being. The service is top-notch."</p>
+                <h4>- John D.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service">
+                <option value="emergency">Emergency Care</option>
+                <option value="consultation">Medical Consultation</option>
+                <option value="preventive">Preventive Care</option>
+            </select>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What should I bring to my first appointment?</h3>
+            <p>Please bring a valid ID, your insurance card (if applicable), and any relevant medical records.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you offer emergency care?</h3>
+            <p>Yes, we offer 24/7 emergency services for urgent health conditions.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How do I get a prescription refilled?</h3>
+            <p>Contact our office and we will guide you through the process for a prescription refill.</p>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="newsletter-form">
+            <label for="email-newsletter">Email:</label>
+            <input type="email" id="email-newsletter" name="email" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="map">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HealthCare. All rights reserved.</p>
+    </footer>
+
+    <script src="med.js"></script>
+</body>
+</html>
